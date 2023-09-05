@@ -104,11 +104,14 @@
       font-size: 1em;
       font-family: 'Open Sans', sans-serif;
       text-align: left;
+      color: #e2e3ed;
     }
     
     ul,
     ol {
       list-style-type: none;
+      margin: 0;
+      padding: 0;
     }
     
     a {
@@ -119,6 +122,7 @@
     h2 {
       font-family: 'Poppins', sans-serif;
       font-size: 1.875em;
+      font-weight: 500;
     }
     
     h3,
@@ -126,6 +130,7 @@
       font-family: 'Poppins', sans-serif;
       margin: 20px 0;
       font-size: 1.125em;
+      font-weight: 500;
     }
     
     p {
@@ -151,6 +156,7 @@
     display: flex;
     justify-content: center;
     padding: 15px 0;
+    background-color: #202322;
   }
   
   header .content-wrapper {
@@ -164,9 +170,16 @@
     width:100%;
     height: 1px;
     margin: 10px 0 20px 0;
+    background: #3a3a3a;
+  }
+  header figure {
+    width: 60%;
   }
   header nav {
     width: 60%;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
   }
   
   header nav ul {
@@ -174,12 +187,16 @@
     justify-content: space-around;
     width: 100%;
   }
+  header nav ul li {
+    font-size: 1.125em;
+  }
   
   footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: #202322;
   }
   footer p {
     margin: 0;
@@ -211,8 +228,18 @@
   /* Hero Area */
   
   .hero-area {
-    display: flex;
-    justify-content: center;
+  background: url('../C:/Users/jdill/Downloads/unplugged-design-docs/unplugged-design-docs/unplugged-retreat.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  }
+  .hero-area h1 {
+    font-size: 2.25em;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
   }
   
   /* Aside */
@@ -220,11 +247,38 @@
   aside {
     display: flex;
     justify-content: center;
+    background-color: #527158;
+  }
+  aside .form{
+    margin-top: 30px;
+  }
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
   }
   
   /* Features */
   
   .features {
+    background: url('../img/C:/Users/jdill/Downloads/unplugged-design-docs/unplugged-design-docs/unplugged-retreat-features.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
   }
@@ -249,14 +303,17 @@
   /* Reviews */
   
   .reviews {
+    background-color: #2a423a;
     display: flex;
     justify-content: center;
   }
   .reviews h2 {
-
+    margin-bottom: 40px;
+    line-height: 1;
   }
   .reviews h3 {
     width: 55%;
+    margin: 20px 0;
   }
   
   /* ==========================================================================
@@ -264,6 +321,7 @@
      ========================================================================== */
   
   .mission {
+    background-color: #527158;
     display: flex;
     justify-content: center;
   }
@@ -275,13 +333,14 @@
   .contact-content p {
     margin: 0;
   }
-  .map-container {
+  .map figure {
     position: relative;
-    padding-bottom: 75%;
+    padding-bottom: 125%;
     height: 0;
     overflow: hidden;
+    width: 100%;
   }
-  .map-container iframe {
+  .map iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -293,6 +352,7 @@
      ========================================================================== */
   
   .faq {
+    background-color: #527158;
     display: flex;
     justify-content: center;
   }
@@ -302,13 +362,17 @@
     justify-content: center;
     align-items: flex-start;
     flex-flow: row wrap;
-    margin: 50px 0;
+    margin: 50px 0 0 0;
   }
   .faq h2 {
-    margin: 40px;
+    margin-bottom: 40px;
+    line-height: 1;
   }
   .faq-content {
     margin-bottom: 50px;
+  }
+  .faq-content h4 {
+    line-height: 1.333;
   }
   
   /* ==========================================================================
@@ -456,13 +520,16 @@
     }
  
     .features .features-item-description {
-        width: 50%;
+        width: 62%;
     }
  
     /* Reviews */
     .reviews article {
          display: flex;
          justify-content: space-between;
+    }
+    .reviews h2 {
+      width: 85%;
     }
     
     .reviews article div {
@@ -474,15 +541,29 @@
         width: 65%;
         margin: 100px 0;
     }
-    
+    .reviews h3 {
+      width: 75%;
+      margin: 0;
+    }
+    footer .content-wrapper {
+      width: 65%;
+    }
     .footer-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: row;
     }
  
     footer .contact {
         margin-bottom: 0;
+    }
+    footer h4 {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+    }
+    footer p {
+      line-height: 1.285;
     }
  
     footer .copyright {
@@ -503,6 +584,9 @@
   .mission-content p {
     width: 45%;
   }
+  .map figure {
+    padding-bottom: 45.45%;
+  }
 
   .contact-section .content-wrapper h2 {
     width: 80%;
@@ -512,6 +596,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+  .contact-content h4 {
+    font-size: 1.5em;
   }
 
   /* ==========================================================================
@@ -529,7 +616,11 @@
   .faq h2 {
     width: 100%;
   }
-
+  .faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
+  }
      
     @media only screen and (min-width: 1200px) {
       /*Desktop styles here*/
@@ -543,9 +634,20 @@
   header {
     padding: 15px 0;
   }
-
+  h2 {
+    font-size: 2.25em;
+  }
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }  
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
   /* Hero */
   .hero-area h1 {
+    font-size: 3.75em;
     width: 80%;
   }
 
@@ -556,7 +658,9 @@
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 30%;
+    width: 40%;
+  }.form-description p {
+    font-size: 1.125em;
   }
 
   /* Features */
@@ -570,33 +674,45 @@
   }
 
   /* Reviews */
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
   .reviews article div {
     width: 42%;
+  }
+  footer h4 {
+    font-size: 1.875em;
   }
 
   /* ==========================================================================
   About Page
   ========================================================================== */
-
+  .map figure {
+    padding-bottom: 37.5%;
+  }
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
+  }
+  .contact-content h4 {
+    font-size: 1.875em;
   }
 
   /* ==========================================================================
   FAQ Page
   ========================================================================== */
   .faq h2 {
+    font-size: 3em;
     width: 100%;
   }
-
-
-  @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+  .faq h4,
+  faq p {
+    font-size: 1.125em;
+    line-height: 1;
   }
+
+
   
   /* ==========================================================================
      Print styles.
