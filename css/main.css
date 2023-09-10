@@ -228,7 +228,7 @@
   /* Hero Area */
   
   .hero-area {
-  background: url('../C:/Users/jdill/Downloads/unplugged-design-docs/unplugged-design-docs/unplugged-retreat.jpg');
+  background: url(../img/unplugged-retreat.jpg);
   background-size: cover;
   background-position: center;
   min-height: 500px;
@@ -276,7 +276,7 @@
   /* Features */
   
   .features {
-    background: url('../img/C:/Users/jdill/Downloads/unplugged-design-docs/unplugged-design-docs/unplugged-retreat-features.jpg');
+    background: url('../img/unplugged-retreat-features.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -535,15 +535,14 @@
     .reviews article div {
         width: 49%;        
     }
- 
+    .reviews h3 {
+      width: 75%;
+      margin: 0;
+    }
     /* Footer */
     footer .content-wrapper {
         width: 65%;
         margin: 100px 0;
-    }
-    .reviews h3 {
-      width: 75%;
-      margin: 0;
     }
     footer .content-wrapper {
       width: 65%;
