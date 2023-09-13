@@ -143,6 +143,7 @@
     
     figure {
       margin: 0;
+      width: 50%;
     }
     address {
       font-style: normal;
@@ -306,16 +307,18 @@
     background-color: #2a423a;
     display: flex;
     justify-content: center;
+    text-align: justify;
+    
   }
   .reviews h2 {
     margin-bottom: 40px;
     line-height: 1;
   }
   .reviews h3 {
-    width: 55%;
+    width: 40%;
     margin: 20px 0;
+
   }
-  
   /* ==========================================================================
      About Page
      ========================================================================== */
@@ -329,6 +332,7 @@
   .contact-section {
     display: flex;
     justify-content: center;
+    background-color: #527158;
   }
   .contact-content p {
     margin: 0;
